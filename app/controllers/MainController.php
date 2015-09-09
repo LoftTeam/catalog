@@ -4,7 +4,7 @@ class MainController extends  Controller
 {
     function actionIndex()
     {
-        $this->view->generate('main_view.php', 'template_main.php',
+        $this->view->generate('main_view.php', 'templates/template_main.php',
             array(
                 'title' => 'Главная страница',
                 'is_photo_slider' => true,

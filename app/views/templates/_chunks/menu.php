@@ -17,7 +17,7 @@
                     <div class="nav_link_triangle">
                         <div class="nav_link_outer">
                             <div class="nav_link_inner">
-                                <span>новости</span>
+                                <span>Продукция</span>
                             </div>
                         </div>
                     </div>

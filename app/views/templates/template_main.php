@@ -29,19 +29,22 @@
 
             <?php require_once '_chunks/header.php'; ?>
 
-            <?php if($is_slider): ?>
+            <?php if(!empty($is_slider)): ?>
                 <?php require_once '_chunks/slider.php'; ?>
             <?php endif; ?>
 
             <?php require_once '_chunks/menu.php'; ?>
 
-            <?php if($is_photo_slider): ?>
+            <?php if(!empty($is_photo_slider)): ?>
                 <?php require_once '_chunks/slider-photo.php'; ?>
             <?php endif; ?>
 
             <div class="content_area main_page">
                 <div class="content_area_right">
                     <?php require_once '_chunks/left_navbar.php'; ?>
+                    <?php if(!empty($is_left_slider)): ?>
+                        <?php require_once '_chunks/right_sidebar.php'; ?>
+                    <?php endif; ?>
                 </div>
 
 
@@ -50,7 +53,7 @@
 
                         <?php include 'app/views/'.$content_view; ?>
 
-                        <?php if($is_right_sidebar): ?>
+                        <?php if(!empty($is_right_sidebar)): ?>
                             <?php require_once '_chunks/right_sidebar.php'; ?>
                         <?php endif; ?>
                     </div>
