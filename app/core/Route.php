@@ -33,7 +33,7 @@ class Route
 
         // подцепляем файл с классом модели (файла модели может и не быть)
         $model_file = $model_name. '.php';
-        $model_path = "application/models/" . $model_file;
+        $model_path = "app/models/" . $model_file;
         if (file_exists($model_path)) {
             include "app/models/" . $model_file;
         }
