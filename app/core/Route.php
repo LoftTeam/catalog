@@ -22,8 +22,12 @@ class Route
             $action_name = $routes[2];
         }
 
-        if(!empty(array_slice($routes, 3))){
-            $params = array_slice($routes, 3);
+//        if(!empty(array_slice($routes, 3))){
+//            $params = array_slice($routes, 3);
+//        }
+
+        if(!empty($routes[3])){
+            $params = $routes[3];
         }
 
         // добавляем префиксы
@@ -76,7 +80,7 @@ class Route
 
     }
 
-    function ErrorPage404()
+    static function ErrorPage404()
     {
         $host = 'http://' . $_SERVER['HTTP_HOST'] . '/Error404';
         header('Location:' . $host);
