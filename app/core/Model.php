@@ -9,6 +9,7 @@ abstract class Model
 
     public function __construct(){
         $this->_pdo = new PDO('mysql:dbname=loft_catalog;host=localhost', 'root', '');
+        $this->_pdo->query("SET NAMES 'utf8'");
     }
 
 
