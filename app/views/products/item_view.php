@@ -57,7 +57,7 @@
         </div>
         <div class="item_properties">
             <ul class="item_prop_list">
-               
+
                 <li>
                     <div class="item_prop_title">Описание</div>
                     <ul class="item_prop_options">
@@ -67,5 +67,4 @@
 
             </ul>
         </div>
-    </div>
 </section>
