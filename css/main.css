@@ -254,13 +254,13 @@ header .container {
 .banner_title {
   position: absolute;
   top: 6px;
-  left: 151px;
+  left: 130px;
   font-size: 28px;
   color: #69945f;
 }
 .banner_phone {
   position: absolute;
-  right: 119px;
+  right: 150px;
   top: 19px;
 }
 .banner_phone span {
@@ -274,6 +274,21 @@ header .container {
   font-size: 20px;
   line-height: 25px;
 }
+
+.authentication {
+  position: absolute;
+  right: 0px;
+  top: 19px;
+}
+
+
+.authentication span {
+  color: #afafb1;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+}
+
 .banner_callback {
   font-size: 11px;
   text-decoration: none;
