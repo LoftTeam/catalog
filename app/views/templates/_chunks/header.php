@@ -14,10 +14,9 @@
             <span>111-22-33</span>
         </a>
         </div>
-        <div class="authentication">
+    <div class="authentication">
         <a class="auth-link" href="auth">
             <span>Войти</span>
         </a>
-            </div>
     </div>
 </header>
