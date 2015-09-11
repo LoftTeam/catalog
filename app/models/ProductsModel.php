@@ -1,7 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: support
- * Date: 09.09.2015
- * Time: 8:48
- */
+
+class ProductsModel extends Model
+{
+    public function get_data(){
+
+        $sql = "SELECT products.id, products.title,products.img, products.price, products.mark,
+                products.description, category_products.title as category_name
+                FROM products
+                LEFT JOIN category_products ON products.id_catalog = category_products.id";
+
+        $result = $this->_pdo->query($sql);
+
+        if(!$result){
+            return $result;
+        }
+        $records = $result->fetchAll(PDO::FETCH_ASSOC);
+        return $records;
+
+    }
+}
