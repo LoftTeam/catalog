@@ -4,7 +4,7 @@ class AboutController extends  Controller
 {
     function actionIndex()
     {
-        $this->view->generate('about_view.php', 'templates/template_main.php',
+        $this->view->generate('about_view.php', 'template_main.php',
             array(
                 'title' => 'О Компании',
 

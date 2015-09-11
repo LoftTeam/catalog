@@ -3,10 +3,10 @@
         <a href="/">
             <img src="/images/logo/main.png" alt="">
         </a>
-        <span class="banner_seo_text">Оптовый магазин бытовой техники elDelta</span>
+        <span class="banner_seo_text">Магазин эоектронной техники</span>
     </div>
     <div class="banner_title">
-        Оптовый магазин бытовой техники
+        Магазин эоектронной техники
     </div>
     <div class="banner_phone">
         <a class="banner_phone-link" href="tel:+84955466590">

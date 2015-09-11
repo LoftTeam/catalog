@@ -483,7 +483,7 @@ $(document).ready(function(){
 
     /* --------- fancybox ---------*/
 
-    if($('.category_list .category_show_full').length || $('.category_show_full').length) {
+    if($('.category_list .category_show_full1').length || $('.category_show_full1').length) {
 
         $('.category_list .category_show_full, .item .category_show_full').fancybox({
             padding     : 0,

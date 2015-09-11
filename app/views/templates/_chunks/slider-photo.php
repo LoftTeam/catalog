@@ -1,6 +1,5 @@
 <section>
     <div class="wrap">
-
         <ul class="wrap__slider">
             <li class="wrap__slider-item">
                 <img class="wrap__slider-img" src="http://lorempixel.com/907/300/sports/1" alt=""/>
