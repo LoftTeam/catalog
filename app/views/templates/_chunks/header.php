@@ -9,7 +9,7 @@
         Магазин электронной техники
     </div>
     <div class="banner_phone">
-<!--        <a class="banner_phone-link" href="tel:+80481112233">-->
+        <a class="banner_phone-link" href="tel:+80481112233">
             <span>8(048)</span>
             <span>111-22-33</span>
         </a>
@@ -18,5 +18,6 @@
         <a class="auth-link" href="auth">
             <span>Войти</span>
         </a>
+            </div>
     </div>
 </header>
