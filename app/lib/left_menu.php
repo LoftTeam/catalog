@@ -1,7 +1,7 @@
 
 <?php
 
-class Lib extends  Model
+class Left_menu extends  Model
 {
     function get_left_menu()
     {
