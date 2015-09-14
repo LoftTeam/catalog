@@ -1,38 +1,22 @@
-<div class="authorize_popup" id="authorize_popup">
-    <div class="authorize_top"></div>
-    <div class="authorize_body">
-        <div class="fancy_title">
-            Авторизация
-        </div>
-        <div class="authorize_body_inner">
-            <div class="authorize_inner_top"></div>
+<section>
+    <?php if($result): ?>
+    <p>Вы зарегистрированы</p>
+    <?php else: ?>
+<!--    // Выводим ошибки списком-->
+    <?php if(isset($errors) && is_array($errors)): ?>
+    <ul>
+        <?php foreach ($errors as $error): ?>
+        <li> - <?php echo $error; ?></li>
+        <?php endforeach; ?>
+    </ul>
+    <?php endif; ?>
 
-            <label class="register_label">
-                <span class="register_text">Логин</span>
-                                <span class="text_input">
-                                    <span class="text_input_wrap">
-                                <input type="text">
-                                </span>
-                            </span>
-            </label>
-            <label class="register_label">
-                <span class="register_text">Пароль</span>
-                                <span class="text_input">
-                                    <span class="text_input_wrap">
-                                <input type="text">
-                                </span>
-                            </span>
-            </label>
-            <div class="authorize_footer">
-                <a class="authorize_remember" href="#">Напомнить пароль</a>
-                <a class="authorize_register" href="#">Регистрация</a>
-                <div class="authorize_submit_block">
-                    <a href="#" class="authorize_submit_btn">Авторизоваться</a>
-                    <input type="submit">
-                </div>
-            </div>
-            <div class="authorize_inner_bottom"></div>
-        </div>
-    </div>
-    <div class="authorize_bottom"></div>
-</div>
+    <h2>Регистрация на сайте</h2>
+    <form action="#" method="post">
+    <p><input type="text" name="name" placeholder="Имя" value="<?php echo $name; ?>"/></p>
+    <p><input type="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>"/></p>
+    <p><input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"></p>
+    <p><input type="submit" name="submit" value="Регистрация"></p>
+    </form>
+    <?php endif; ?>
+</section>

@@ -8,6 +8,7 @@
  *
 */
 
+define('ROOT', dirname(__FILE__));
 define('ENVIRONMENT','development');
 
 switch (ENVIRONMENT)
