@@ -2,7 +2,7 @@
 
 class ProductsModel extends Model
 {
-     public function get_data(){
+    public function get_data(){
 
         $sql = "SELECT products.id, products.title,products.img, products.price, products.mark,
                 products.description, category_products.title as category_name
@@ -16,6 +16,7 @@ class ProductsModel extends Model
         }
         $records = $result->fetchAll(PDO::FETCH_ASSOC);
         return $records;
+
     }
 
     public function get_product($id){
@@ -31,5 +32,4 @@ class ProductsModel extends Model
         return $records;
 
     }
-
 }
