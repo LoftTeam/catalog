@@ -20,12 +20,12 @@ class ProductsController extends  Controller
 
     function actionView($id)
     {
-        $id = (int)$id[0];
+        //$id = (int)$id[0];
         $data = $this->model->get_product($id);
         $this->view->generate('products/item_view.php', 'template_main.php',
             array(
                 'title' => $data['title'],
-                'product' => $data
+                'product_item' => $data
             )
         );
     }
