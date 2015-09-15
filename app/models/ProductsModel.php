@@ -25,11 +25,13 @@ class ProductsModel extends Model
                 FROM products
                 LEFT JOIN category_products ON products.id_catalog = category_products.id
                 WHERE
-                category_products.id = $category_id
+                products.mark LIKE '%$brand%'
+                AND category_products.id = $category_id
                 AND products.price >= $from
                 AND products.price <= $to
                 ";
-
+    /*    var_dump($sql);
+        exit;*/
         $result = $this->_pdo->query($sql);
         if(!$result){
             return $result;

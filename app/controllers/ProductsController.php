@@ -21,6 +21,7 @@ class ProductsController extends  Controller
                 if(empty($to)){$to = 999999;}
                 $brand = ClearInput::clearInput($_POST['brand'],'s');
 
+
                 $this->view->generate('products/index_view.php', 'template_main.php',
                     array(
                         'title' => 'Продукция',
