@@ -1,6 +1,6 @@
 <?php
 
-class AuthModel extends Model{
+class RegisterModel extends Model{
 
     public function signUp($name, $email, $password){
 

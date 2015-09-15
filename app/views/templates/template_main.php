@@ -45,6 +45,9 @@
                     <?php if(!empty($is_left_slider)): ?>
                         <?php require_once '_chunks/right_sidebar.php'; ?>
                     <?php endif; ?>
+                    <?php if(!empty($is_filters_side)): ?>
+                        <?php require_once '_chunks/filters_side.php'; ?>
+                    <?php endif; ?>
                 </div>
 
 

@@ -15,7 +15,7 @@
         </a>
         </div>
     <div class="authentication">
-        <a class="auth-link" href="auth">
+        <a class="auth-link" href="/auth">
             <span>Войти</span>
         </a>
     </div>

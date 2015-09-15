@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Авторизация</title>
+    <title><?=$title ?></title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -21,9 +21,9 @@
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 
-<!--<div class = "wrapper wrapper_auth">-->
-    <?php include 'app/views/admin/auth_view.php'; ?>
-<!--</div> <!-- wrapper -->
+<div class = "wrapper wrapper_auth">
+    <?php include 'app/views/'.$content_view; ?>
+</div> <!-- wrapper -->
 
 </body>
 </html>

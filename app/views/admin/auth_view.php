@@ -1,4 +1,3 @@
-<?php //require '../templates/_chunks/header.php'; ?>
 
 <div class="authorize_popup" id="authorize_popup">
     <div class="authorize_top"></div>
@@ -38,16 +37,12 @@
                             </span>
             </label>
 
-<!--            <input type="submit" name="signup">-->
-
             <div class="authorize_footer">
-<!--                <a class="authorize_remember" href="#">Напомнить пароль</a>-->
-<!--                <a class="authorize_register" href="#">Регистрация</a>-->
+                <a class="authorize_remember" href="#">Напомнить пароль</a>
+                <a class="authorize_register" href="/register">Регистрация</a>
+                <input type="submit" value="Войти">
                 <div class="authorize_submit_block">
-<!--                    <a href="#" class="authorize_submit_btn">Регистрация</a>-->
-                    <input type="submit" name="signup">
-<!--                    <a href="#" class="authorize_submit_btn">Напомнить пароль</a>-->
-<!--                    <input type="submit">-->
+
                 </div>
             </div>
             </form>

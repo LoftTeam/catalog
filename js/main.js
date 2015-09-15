@@ -550,6 +550,15 @@ $(document).ready(function(){
         $(this).closest('.jobs_form_field').find('.jobs_fake_input').val(fileName);
     });
 
+/*    $( "#category_filter" ).change(function() {
+        var url = window.location.host + '/products/index?cat' + $(this).val(); // get selected value
+        if (url) { // require a URL
+            //alert(url)
+            window.location = url; // redirect
+        }
+        return false;
+    });*/
+
 });
 
 function clickOnSubmit (links) {
