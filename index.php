@@ -36,6 +36,7 @@ switch (ENVIRONMENT)
         exit(1); // EXIT_ERROR
 }
 
+require_once(ROOT . '/app/Autoload.php');
 
-# Подключаем bootstrap файл
-require_once 'app/bootstrap.php';
+$route = new Route();
+$route->run();

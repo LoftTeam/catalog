@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: support
- * Date: 21.09.2015
- * Time: 19:30
- */
+
+return [
+    'products/view/([0-9]+)' => 'products/view/$1',
+    'products' => 'products/index',
+    'main' => 'main/index',
+    '' => 'main/index',
+];

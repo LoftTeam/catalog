@@ -1,5 +1,4 @@
 <?php
-
 $Left_menu = new Left_menu();
 $Left_menu_cat = $Left_menu->get_left_menu();
 
